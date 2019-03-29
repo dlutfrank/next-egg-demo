@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "server": "egg-bin --env=local dev",
+    "mock": "esky-mock -c mock/config.js",
     "build": "next build"
   },
   "keywords": [],
@@ -20,6 +21,8 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "egg-bin": "^4.12.1"
+    "egg-bin": "^4.12.1",
+    "esky-mock": "^1.0.7",
+    "koa2-proxy-middleware": "0.0.4"
   }
 }
