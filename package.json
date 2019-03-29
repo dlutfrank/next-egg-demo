@@ -1,0 +1,25 @@
+{
+  "name": "next-egg-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "server": "egg-bin --env=local dev",
+    "build": "next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.20.2",
+    "express": "^4.16.4",
+    "next": "^8.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.12.1"
+  }
+}
