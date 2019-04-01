@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "init": "npm install --no-optional --no-package-lock",
+    "init-prod": "npm install --prefer-offline --production --no-optional",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "server": "egg-bin --env=local dev",
     "mock": "esky-mock -c mock/config.js",
+    "start-docker": "eggctl start --env=production --title=next-egg-demo",
+    "start-prod":"eggctl start --daemon --env=production --title=next-egg-demo",
+    "stop": "egg-scripts stop --title=next-egg-demo",
     "build": "next build"
   },
   "keywords": [],
@@ -15,14 +20,15 @@
   "license": "ISC",
   "dependencies": {
     "egg": "^2.20.2",
+    "egg-scripts": "^2.11.0",
     "express": "^4.16.4",
     "next": "^8.0.3",
     "react": "^16.8.6",
+    "koa2-proxy-middleware": "0.0.4",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "egg-bin": "^4.12.1",
-    "esky-mock": "^1.0.7",
-    "koa2-proxy-middleware": "0.0.4"
+    "esky-mock": "^1.0.7"
   }
 }
