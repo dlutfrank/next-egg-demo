@@ -10,7 +10,7 @@
     "dev": "next",
     "server": "egg-bin --env=local dev",
     "mock": "esky-mock -c mock/config.js",
-    "start-docker": "eggctl start --env=production --title=next-egg-demo",
+    "start-docker": "eggctl start --env=production --title=next-egg-demo ./",
     "start-prod":"eggctl start --daemon --env=production --title=next-egg-demo",
     "stop": "egg-scripts stop --title=next-egg-demo",
     "build": "next build"
